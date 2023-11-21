@@ -46,9 +46,9 @@ count = 0
 for clipName in files_in_dir:
     if (clipName.lower() in clip_file_names):
         # file path of the source directory copy clips from
-        VALIDATED_FILE_PATH = os.path.join(source_dir_path + clipName)
+        VALIDATED_FILE_PATH = os.path.join(source_dir_path, clipName)
         # directory to paste file into
-        destPath = os.path.join(destDirPath + clipName)
+        destPath = os.path.join(destDirPath, clipName)
 
         # when files are found, increase count
         count = count + 1
